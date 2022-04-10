@@ -52,8 +52,8 @@ plt.show()
 ```
 
 ## Output:
-![linear regression using gradient descent](sam.png)
-
+![output](https://github.com/gunasekhar159/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/ex1ml.png?raw=true)
+![output](https://github.com/gunasekhar159/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/ex1%20ml2.png?raw=true)
 
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
