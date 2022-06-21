@@ -26,34 +26,8 @@ Developed by: M.GUNASEKHAR
 RegisterNumber:212221240014  
 */
 
-import pandas as pd
-import matplotlib.pyplot as plt 
-dataset=pd.read_csv('/content/student_scores - student_scores (1).csv')
-dataset.head() 
-X=dataset.iloc[:,:-1].values 
-y=dataset.iloc[:,:1].values
-print(X)
-print(y)
-from sklearn.model_selection import train_test_split
-X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=1/3,random_state=0)
-from sklearn.linear_model import LinearRegression 
-regressor=LinearRegression()
-regressor.fit(X_train,y_train)
-y_pred=regressor.predict(X_test)
-plt.scatter(X_train,y_train,color='red')
-plt.plot(X_train,regressor.predict(X_train),color='blue')
-plt.title("Hours v/s scores(Training set)")
-plt.xlabel("Hours")
-plt.ylabel("scores")
-plt.show()
-y_pred=regressor.predict(X_test)
-plt.scatter(X_test,y_test,color='red')
-plt.plot(X_test,regressor.predict(X_test),color='blue')
-plt.title("Hours v/s scores(test set)")
-plt.xlabel("Hours")
-plt.ylabel("scores")
-plt.show()
 ```
+
 
 ## Output:
 ![output](https://github.com/gunasekhar159/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/main/ex1ml.png?raw=true)
